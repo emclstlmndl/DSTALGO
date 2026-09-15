@@ -1,0 +1,28 @@
+namespace WhileFormAppTreasureCounter
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void lstScore_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            int treasure = 1;
+
+            lstScore.Items.Clear();
+
+            while (treasure <= 10)
+            {
+                lstScore.Items.Add("Treasure " + treasure + " collected!");
+                treasure++;
+            }
+        }
+    }
+}
