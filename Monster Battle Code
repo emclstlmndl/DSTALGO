@@ -1,0 +1,27 @@
+namespace MonsterBattle
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnFight_Click(object sender, EventArgs e)
+        {
+            int hp = 50;
+            string result = "";
+
+            do
+            {
+                hp -= 10;
+                result += "Monster HP: " + hp + "\n";
+            }
+            while (hp > 0);
+
+            result += "\nMonster Defeated!";
+
+            lblResult.Text = result;
+        }
+    }
+}
