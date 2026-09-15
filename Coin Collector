@@ -1,0 +1,27 @@
+namespace WhileFormAppCoinCollector
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        int coins = 0;
+
+        private void btnCollect_Click(object sender, EventArgs e)
+        {
+
+            do
+            {
+                if (coins < 100)
+                {
+                    coins += 10;
+                }
+            }
+            while (false);
+
+            lblCoins.Text = ("Coins: " + coins);
+        }
+    }
+}
