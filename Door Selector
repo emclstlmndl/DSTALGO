@@ -1,0 +1,48 @@
+namespace WeaponSelector
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnFight_Click(object sender, EventArgs e)
+        {
+            {
+                int door = Convert.ToInt32(txtDoor.Text);
+
+                switch (door)
+                {
+                    case 1:
+                        lblResult.Text = "💰 You found treasure!";
+                        break;
+
+                    case 2:
+                        lblResult.Text = "👾 A monster appeared!";
+                        break;
+
+                    case 3:
+                        lblResult.Text = "🧪 You found a magic potion!";
+                        break;
+
+                    default:
+                        lblResult.Text = "Choose Door 1, 2, or 3.";
+                        break;
+
+
+                }
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblResult_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
